@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data List</title>
+</head>
+<body>
+    <h1>List of Entries</h1>
+    
+    <!-- Table showing the saved data -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(function(entry) { %>
+            <tr>
+                <td><%= entry.lastname %></td>
+                <td><%= entry.firstname %></td>
+                <td><%= entry.email %></td>
+                <td><%= entry.gender %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <!-- Button to navigate back to the form page (index.ejs) -->
+    <br><br>
+  
+
+</body>
+</html>
